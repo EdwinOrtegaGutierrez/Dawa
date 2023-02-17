@@ -5,8 +5,293 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Height="800" Width="1200"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen">
+    
+    <Border Background="#03040A" 
+            CornerRadius="15"
+            MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" 
+                    Width="176"
+                    Height="30"
+                    CornerRadius="10"
+                    Margin="0,15,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#541A66" Offset="0.0"/>
+                        <GradientStop Color="#844eff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                    RadiusY="10"
+                                    Rect="0,0,176,30"/>
+                </Border.Clip>
+                <Grid>
+                    <!-- TITULO DEL PROYECTO -->
+                    <StackPanel>
+                        <TextBlock Text="Dawa IDE"
+                                            Foreground="White"
+                                            FontSize="22"
+                                            Margin="0,2,0,0"
+                                            HorizontalAlignment="Center"
+                                            FontFamily="/Fonts/#Poppins"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Grid.ColumnSpan="2">
+                <Grid HorizontalAlignment="Stretch">
+                    <StackPanel HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                        <!-- CONTROL DE APP -->
+                        <Button Background="Transparent"
+                                BorderBrush="Transparent"
+                                Click="ButtonMinimized_Click"
+                                Margin="0,0,10,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Grid>
+                                        <Ellipse Stroke="Transparent" StrokeThickness="2">
+                                            <Ellipse.Fill>
+                                                <RadialGradientBrush>
+                                                    <GradientStop Offset="1" Color="Transparent" />
+
+                                                    <RadialGradientBrush.Transform>
+                                                        <TransformGroup>
+                                                            <ScaleTransform ScaleY="0.65" />
+                                                        </TransformGroup>
+                                                    </RadialGradientBrush.Transform>
+                                                </RadialGradientBrush>
+                                            </Ellipse.Fill>
+                                        </Ellipse>
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <Border Width="27"
+                                    Height="27"
+                                    Background="Transparent">
+                                <Border.Clip>
+                                    <RectangleGeometry RadiusX="10"
+                                                RadiusY="10"
+                                                Rect="0,0,27,27"/>
+                                </Border.Clip>
+
+                                <Image Source="C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\Icons\swipe_down.png" 
+                                       Height="25" Width="25">
+                                </Image>
+                            </Border>
+                        </Button>
+
+                        <Button Background="Transparent"
+                                BorderBrush="Transparent"
+                                Click="WindowStateButton_Click"
+                                Margin="0,0,10,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Grid>
+                                        <Ellipse Stroke="Transparent" StrokeThickness="2">
+                                            <Ellipse.Fill>
+                                                <RadialGradientBrush>
+                                                    <GradientStop Offset="1" Color="Transparent" />
+
+                                                    <RadialGradientBrush.Transform>
+                                                        <TransformGroup>
+                                                            <ScaleTransform ScaleY="0.65" />
+                                                        </TransformGroup>
+                                                    </RadialGradientBrush.Transform>
+                                                </RadialGradientBrush>
+                                            </Ellipse.Fill>
+                                        </Ellipse>
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <Border Width="27"
+                                    Height="27"
+                                    Background="Transparent">
+                                <Border.Clip>
+                                    <RectangleGeometry RadiusX="10"
+                                                RadiusY="10"
+                                                Rect="0,0,27,27"/>
+                                </Border.Clip>
+                                <Image Source="C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\Icons\swipe.png" 
+                                       Height="25" Width="25">
+                                </Image>
+                            </Border>
+                        </Button>
+
+                        <Button Background="Transparent"
+                                BorderBrush="Transparent"
+                                Click="CloseButton_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Grid>
+                                        <Ellipse Stroke="Transparent" StrokeThickness="2">
+                                            <Ellipse.Fill>
+                                                <RadialGradientBrush>
+                                                    <GradientStop Offset="1" Color="Transparent" />
+
+                                                    <RadialGradientBrush.Transform>
+                                                        <TransformGroup>
+                                                            <ScaleTransform ScaleY="0.65" />
+                                                        </TransformGroup>
+                                                    </RadialGradientBrush.Transform>
+                                                </RadialGradientBrush>
+                                            </Ellipse.Fill>
+                                        </Ellipse>
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <Border Width="27"
+                                    Height="27"
+                                    Background="Transparent"
+                                    Margin="0,0,20,0">
+                                <Border.Clip>
+                                    <RectangleGeometry RadiusX="10"
+                                                RadiusY="10"
+                                                Rect="0,0,27,27"/>
+                                </Border.Clip>
+                                <Image Source="C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\Icons\cancel.png" 
+                                       Height="25" Width="25">
+                                </Image>
+                            </Border>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            
+            <!-- MENU DE LA APP -->
+            <Border Grid.Column="2"
+                    Width="176"
+                    Height="30"
+                    CornerRadius="10"
+                    Margin="0,15,100,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#166646" Offset="0.0"/>
+                        <GradientStop Color="#4eff91" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                    RadiusY="10"
+                                    Rect="0,0,176,30"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                        <Menu Background="Transparent">
+                            <MenuItem Header="Project" 
+                                      Foreground="#FEFEFE"
+                                      Height="25"
+                                      FontSize="12">
+                                <MenuItem Header="Create" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Open Project" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Close Project" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                            </MenuItem>
+                            <MenuItem Header="File"
+                                      Foreground="#FEFEFE"
+                                      Height="25"
+                                      FontSize="12">
+                                <MenuItem Header="New" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Open" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Close File" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Save" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Save As" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                            </MenuItem>
+                            <MenuItem Header="Edit"
+                                      Foreground="#FEFEFE"
+                                      Height="25"
+                                      FontSize="12">
+                                <MenuItem Header="Search" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Replace" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Copy" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Cut" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="Paste" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                            </MenuItem>
+                        </Menu>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- PANEL DE CONTROL -->
+            <Border Grid.Column="0" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="55"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0">
+                        <Border Width="176"
+                                Height="50"
+                                CornerRadius="10,0,0,0"
+                                Margin="0,15,0,0">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#541A66" Offset="0.0"/>
+                                    <GradientStop Color="#844eff" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <Grid>
+                                <!-- TITULO DEL PROYECTO -->
+                                <StackPanel>
+                                    <TextBlock Text="Select Project"
+                                               Foreground="White"
+                                               FontSize="16"
+                                               Margin="0,17,0,0"
+                                               HorizontalAlignment="Center"
+                                               FontFamily="/Fonts/#Poppins"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1">
+                        <Border Width="176">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#541A66" Offset="0.0"/>
+                                    <GradientStop Color="#844eff" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <Grid>
+                                <!-- OPCIONES EN EL PROYECTO -->
+                                <StackPanel>
+                                    
+                                    <Image Source="C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\Icons\folder.png" 
+                                           Height="35" Width="35" HorizontalAlignment="Left" Margin="50,2,0,-35"/>
+                                    <Image Source="C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\Icons\file.png" 
+                                           Height="35" Width="35" Margin="40,0,0,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <!-- EDITOR DE TEXTO -->
+        </Grid>
+    </Border>
 </Window>
