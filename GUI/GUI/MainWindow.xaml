@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GUI"
+        xmlns:local="clr-namespace:GUI" 
+        xmlns:viewmodel="clr-namespace:GUI.MVVM.ViewModel"
         mc:Ignorable="d"
         Height="800" Width="1200"
         WindowStyle="None"
@@ -11,6 +12,10 @@
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen">
+    
+    <Window.DataContext>
+        <viewmodel:MainViewModel/>
+    </Window.DataContext>
     
     <Border Background="#03040A" 
             CornerRadius="15"
@@ -213,11 +218,16 @@
                                       Foreground="#FEFEFE"
                                       Height="25"
                                       FontSize="12">
-                                <MenuItem Header="New" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
-                                <MenuItem Header="Open" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
-                                <MenuItem Header="Close File" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
-                                <MenuItem Header="Save" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
-                                <MenuItem Header="Save As" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"/>
+                                <MenuItem Header="New" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"
+                                          Click="NewMenuItem_Click"/>
+                                <MenuItem Header="Open" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"
+                                          Click="OpenMenuItem_Click"/>
+                                <MenuItem Header="Close File" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"
+                                          Click="CloseFileMenuItem_Click"/>
+                                <MenuItem Header="Save" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"
+                                          Click="SaveMenuItem_Click"/>
+                                <MenuItem Header="Save As" Foreground="#FEFEFE" Background="#03040A" BorderBrush="#03040A"
+                                          Click="SaveAsMenuItem_Click"/>
                             </MenuItem>
                             <MenuItem Header="Edit"
                                       Foreground="#FEFEFE"
@@ -292,6 +302,54 @@
                 </Grid>
             </Border>
             <!-- EDITOR DE TEXTO -->
+            <Border Grid.Row="1"
+                    Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Grid.Row="0">
+                        <Border CornerRadius="10">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#541A66" Offset="0.0"/>
+                                    <GradientStop Color="#844eff" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <Border.Clip>
+                                <RectangleGeometry RadiusX="10"
+                                    RadiusY="10"
+                                    Rect="0,0,200,35"/>
+                            </Border.Clip>
+                            <TextBlock Text="File"
+                                   Foreground="White"
+                                   FontSize="22"                                         
+                                   FontFamily="/Fonts/#Poppins"
+                                   Margin="20,5,0,0"/>
+                        </Border>
+                    </DockPanel>
+                    <DockPanel Grid.Row="1"
+                               Margin="0,0,30,30">
+                        <Border CornerRadius="10">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#541A66" Offset="0.0"/>
+                                    <GradientStop Color="#844eff" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <TextBox x:Name="TextBox" AcceptsTab="True" VerticalScrollBarVisibility="Hidden"  Background="Transparent"
+                                         BorderBrush="Transparent" 
+                                         Foreground="White"
+                                         FontSize="22"                                         
+                                         FontFamily="/Fonts/#Poppins"/>
+                        </Border>
+                    </DockPanel>
+                </Grid>
+            </Border>
+            
+            
         </Grid>
     </Border>
 </Window>

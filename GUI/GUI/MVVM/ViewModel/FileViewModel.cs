@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GUI.MVVM.ViewModel
 {
-    class FileViewModel
+    internal class FileViewModel
     {
     }
 }

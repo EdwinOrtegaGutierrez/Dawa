@@ -5,6 +5,45 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    
+             d:DesignHeight="500" d:DesignWidth="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Border CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#541A66" Offset="0.0"/>
+                        <GradientStop Color="#844eff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                    RadiusY="10"
+                                    Rect="0,0,200,35"/>
+                </Border.Clip>
+                <RichTextBox AcceptsTab="True" VerticalScrollBarVisibility="Auto" Background="Transparent"
+                         BorderBrush="Transparent"/>
+            </Border>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <Border CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#541A66" Offset="0.0"/>
+                        <GradientStop Color="#844eff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                    RadiusY="10"
+                                    Rect="0,0,900,500"/>
+                </Border.Clip>
+            </Border>
+        </DockPanel>
+    </Grid>
 </UserControl>

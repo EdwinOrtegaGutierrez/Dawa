@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\App.xaml
-11407045341
+2-1331885163
 1100375941
-3-1233169557
+729174382
 194237474483
-MainWindow.xaml;
+MainWindow.xaml;MVVM\View\FileView.xaml;
 
 False
 
