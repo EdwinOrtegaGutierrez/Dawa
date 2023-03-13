@@ -1,0 +1,18 @@
+﻿<Application x:Class="GUI_v0._1._2_b.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GUI_v0._1._2_b"
+             xmlns:viewModel="clr-namespace:GUI_v0._1._2_b.MVVM.ViewModel"
+             xmlns:view="clr-namespace:GUI_v0._1._2_b.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:FileViewModel}">
+                <view:FileView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
