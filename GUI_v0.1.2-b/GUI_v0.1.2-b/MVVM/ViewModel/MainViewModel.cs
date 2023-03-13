@@ -1,10 +1,13 @@
 ﻿using GUI_v0._1._2_b.Core;
 using GUI_v0._1._2_b.MVVM.View;
 using Microsoft.Win32;
+using CliWrap;
+using CliWrap.Buffered;
 using System.ComponentModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System;
 
 namespace GUI_v0._1._2_b.MVVM.ViewModel
 {
@@ -20,6 +23,7 @@ namespace GUI_v0._1._2_b.MVVM.ViewModel
         public RelayCommand SaveFileCommand { get; set; }
         public RelayCommand SearchCommand { get; set; }
         public RelayCommand ReplaceCommand { get; set; }
+        public RelayCommand SeeSimbolCommand { get; set; }
 
         // CREATE THE DIFERENT VIEWS BETWEEN OTHERS
         public HomeViewModel HomeVM { get; set; }
@@ -48,6 +52,16 @@ namespace GUI_v0._1._2_b.MVVM.ViewModel
             FileViewCommand = new RelayCommand(o => { CurrentView = FileVM; });
 
             // OPTIONS
+            SeeSimbolCommand = new RelayCommand(async o => { 
+                string argumento = "ReadSimbol.py";
+                var program = await Cli.Wrap("python")
+                                        .WithValidation(CommandResultValidation.None)
+                                        .WithWorkingDirectory(@"C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI_v0.1.2-b\GUI_v0.1.2-b\Scripts\")
+                                        .WithArguments(argumento)
+                                        .ExecuteBufferedAsync();
+                String data = program.StandardOutput;
+                MessageBox.Show(data);
+            });
             OpenFileCommand = new RelayCommand(o => {
                 var openFileDialog = new OpenFileDialog();
                 openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
