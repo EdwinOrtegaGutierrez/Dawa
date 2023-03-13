@@ -63,6 +63,9 @@
                         <MenuItem Header="Cut" Foreground="#292B2F"/>
                         <MenuItem Header="Paste" Foreground="#292B2F"/>
                     </MenuItem>
+                    <MenuItem Header="Help" Foreground="#FEFEFE" Height="25" FontSize="12">
+                        <MenuItem Header="See Simbols" Foreground="#292B2F" Command="{Binding SeeSimbolCommand}"/>
+                    </MenuItem>
                 </Menu>
             </StackPanel>
         </Grid>
