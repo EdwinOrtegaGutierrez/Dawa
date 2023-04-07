@@ -24,3 +24,29 @@ C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\obj\Debug\net6.0-win
 C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\obj\Debug\net6.0-windows\MVVM\View\FileView.baml
 C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\obj\Debug\net6.0-windows\App.baml
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\bin\Debug\net6.0-windows\GUI.exe
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\bin\Debug\net6.0-windows\GUI.deps.json
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\bin\Debug\net6.0-windows\GUI.dll
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\bin\Debug\net6.0-windows\GUI.pdb
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\MVVM\View\FileView.g.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI_Content.g.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.cache
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.lref
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\App.baml
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\MVVM\View\FileView.baml
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.g.resources
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.dll
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\refint\GUI.dll
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.pdb
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
