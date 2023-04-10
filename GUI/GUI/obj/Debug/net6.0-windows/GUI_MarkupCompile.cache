@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\obj\Debug\net6.0-windows\
-GUI
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\obj\Debug\net6.0-windows\
+GUI_3uicq33u_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\edwin\OneDrive\Documentos\Universidad\Dawa\GUI\GUI\App.xaml
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\gatopk\Desktop\tareas\Teoria de la computacion\Dawa\GUI\GUI\App.xaml
 2-1331885163
 1100375941
-729174382
-194237474483
+12-888636008
+3882087237404
 MainWindow.xaml;MVVM\View\FileView.xaml;
 
 False

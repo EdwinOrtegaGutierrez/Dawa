@@ -44,7 +44,7 @@ namespace GUI
 
         private void NewMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            TextBox.Text = string.Empty;
+            TextBox.Text = string.Empty;            
         }
 
         private void OpenMenuItem_Click(object sender, RoutedEventArgs e)
