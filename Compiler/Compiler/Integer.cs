@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Compiler
+﻿namespace Compiler
 {
     internal class Integer
     {
+<<<<<<< HEAD
+        private int value;
+
+        public Integer(int v) => value = v;
+
+        public int GetValue() => value;
+
+        public override string ToString() => value.ToString();
+=======
 
         //Saber si es un entero
         private bool integer(string num)
@@ -31,5 +34,6 @@ namespace Compiler
                 return false;
             }
         }
+>>>>>>> 0c154896f59fdc40efa46c52ba4d41108efdb9d0
     }
 }

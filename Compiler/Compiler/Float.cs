@@ -1,4 +1,23 @@
 ﻿using System;
+<<<<<<< HEAD
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Compiler
+{
+    internal class Float
+    {
+        private double value;
+
+        public Float(double v) => value = v;
+
+        public double GetValue() => value;
+
+        public override string ToString() => value.ToString();
+    }
+=======
 
 public class Class1
 {
@@ -24,4 +43,5 @@ public class Class1
             }
         }
 	}
+>>>>>>> 0c154896f59fdc40efa46c52ba4d41108efdb9d0
 }

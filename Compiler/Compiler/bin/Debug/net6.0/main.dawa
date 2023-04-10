@@ -1,0 +1,50 @@
+println("Hello World");
+
+name = "Eddy"
+println(name);
+
+age = 20
+println("Age: {age} years old");
+
+money = 350.48
+println("Money: {money} dollars")
+
+handsome = true;
+println("Handsome: {handsome}")
+
+<// comentario //>
+data = {
+	"id" : 1,
+	"nationality" : "american",
+	"name" : name,
+	"age" : age,
+	"money" : money,
+	"handsome" : handsome,
+	"height" : 1.65,
+	"becario" : false
+}
+
+println("Information: {data}");
+println("Name: {data.name}");
+data.name = "Omar"
+println("Name: {data.name}")
+println(data.age)
+
+countrys = ["Mexico", "USA", "Canada", 2, 23.32, true]
+
+println("Countrys: {countrys}");
+println(countrys[0]);
+println("Countrys: {countrys[0]}")
+
+salaryDay = 300
+
+month = 31;
+
+monthlySalary = salaryDay * month - (1 / 2) - (3 / 4);
+
+println(monthlySalary);
+
+keys = (234, 343.443, "djjdjs", false)
+
+println(keys)
+println(keys[0])
